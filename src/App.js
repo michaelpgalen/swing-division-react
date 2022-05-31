@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { Children } from 'react';
+import { useState } from 'react';
 import './App.css';
+import Timer from './Timer.js';
+import 'https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js';
+import OutputDisplay from './Components/outputDisplay';
+import UserInputs from './Components/userInputs';
+
 
 function App() {
+  const [tempo, setTempo] = useState(100);
+  const [rhythm, setRhythm] = useState('samba');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='metronome'>
+      <OutputDisplay tempo={tempo}/>
+      <UserInputs tempo={tempo} setTempo={setTempo}/>
     </div>
   );
 }
