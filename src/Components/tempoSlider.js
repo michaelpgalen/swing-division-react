@@ -1,9 +1,9 @@
 
-function TempoSlider(tempo, ...props) {
+function TempoSlider({tempo, setTempo, ...props}) {
     
     const handleSliderChange = (e) => {
-        props.setTempo(e.target.value);
-        console.log('tempo slider changed. New value = ', e.target.value)
+        setTempo(e.target.value);
+        // console.log('tempo slider changed. New value = ', e.target.value)
     };
 
     return (

@@ -1,3 +1,4 @@
+import {useState} from "react";
 
 // Add accurate timer constructor function
 function Timer(callback, timeInterval, errorCallback) {
@@ -13,7 +14,7 @@ function Timer(callback, timeInterval, errorCallback) {
     }
     // Add method to stop timer
     this.stop = () => {
-      clearTimeout(this.timeout);
+      clearTimeout(timeoutId);
       console.log('Timer Stopped');
     }
     

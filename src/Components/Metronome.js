@@ -1,3 +1,5 @@
+// this script is not used. It was an experiment from a new tutorial
+
 import { useEffect, useState } from "react";
 import repique1 from "./repique1.mp3";
 import repique2 from "./repique2.mp3";
