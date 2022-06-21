@@ -1,7 +1,17 @@
-function TempoAdjustBtn(props) {
+function TempoAdjustBtn({tempo, setTempo, className, text}) {
+    
+    const handleClick = (e) => {
+        if (text === '+') {
+            setTempo(tempo+1);
+        };
+        if (text === '-') {
+            setTempo(tempo-1);
+        };
+        console.log(text)
+    };
 
     return (
-        <div className={props.class}>{props.children}</div>
+        <div onClick={handleClick} className={className} children={text}></div>
     )
 };
 

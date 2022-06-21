@@ -8,7 +8,7 @@ function TempoSlider({tempo, setTempo, ...props}) {
 
     return (
         <input onChange={handleSliderChange}
-        defaultValue={tempo} type="range" min="20" max="200" step="1" className="slider"></input>
+        defaultValue={tempo} type="range" min="50" max="150" step="1" className="slider"></input>
     )
 };
 

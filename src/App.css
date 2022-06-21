@@ -45,7 +45,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.tempo-settings .adjust-tempo-btn {
+.adjust-tempo-btn {
     font-size: 40px;
     border-radius: 50%;
     border: 1px solid #ddd;
@@ -54,7 +54,7 @@ body {
     text-align: center;
     cursor: pointer;
 }
-.tempo-settings .adjust-tempo-btn:hover {
+.adjust-tempo-btn:hover {
     color: #fff;
     background-color: #fa545c;
 }

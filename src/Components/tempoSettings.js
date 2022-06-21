@@ -5,9 +5,9 @@ function TempoSettings(props) {
 
     return (
         <div className="tempo-settings">
-            <TempoAdjustBtn className="adjust-tempo-btn decrease-tempo" children="-" />
+            <TempoAdjustBtn tempo={props.tempo} setTempo={props.setTempo} className="adjust-tempo-btn decrease-tempo" text="-" />
             <TempoSlider tempo={props.tempo} setTempo={props.setTempo}/>
-            <TempoAdjustBtn className="adjust-tempo-btn increase-tempo" children="+" />
+            <TempoAdjustBtn tempo={props.tempo} setTempo={props.setTempo} className="adjust-tempo-btn increase-tempo" text="+" />
         </div>
     )
 };
