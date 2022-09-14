@@ -8,7 +8,6 @@ import UserInputs from './Components/userInputs';
 
 function App() {
   const [tempo, setTempo] = useState(100);
-  const [rhythm, setRhythm] = useState('samba');
 
   return (
     <div className='metronome'>
